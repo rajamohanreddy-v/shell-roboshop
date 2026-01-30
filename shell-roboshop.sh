@@ -47,7 +47,6 @@ fi
 aws route53 change-resource-record-sets \
 
  --hosted-zone-id $ZONE_ID \
-
  --change-batch '
 {
   "Comment": "Creating records",
@@ -60,7 +59,7 @@ aws route53 change-resource-record-sets \
         "TTL": 1,
         "ResourceRecords": [
           {
-            "Value":"'$IP'"
+            "Value": "'$IP'"
           }
         ]
       }
