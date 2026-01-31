@@ -14,7 +14,7 @@ echo -e "$R Please run the script with root user $N"
 exit 1
 fi
 
-mkdir -p "$LOG_FOLDER" &>>"$LOGS_FILE"
+mkdir -p "$LOG_FOLDER"
 
 validate() { if [ "$1" -ne 0 ]; then 
 echo -e "$2 ... is $R failed $N" | tee -a "$LOGS_FILE"

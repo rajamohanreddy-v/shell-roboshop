@@ -17,10 +17,10 @@ fi
 mkdir -p "$LOG_FOLDER"
 
 Validate() { if [ "$1" -ne 0 ]; then
-echo " $R installing $2 failed $N" | tee -a "$LOGS_FILE"
+echo "$R installing $2 failed $N" | tee -a "$LOGS_FILE"
 exit 1
 else
-echo " $G installing $2 success $N" | tee -a "$LOGS_FILE"
+echo "$G installing $2 success $N" | tee -a "$LOGS_FILE"
 fi
 }
 
